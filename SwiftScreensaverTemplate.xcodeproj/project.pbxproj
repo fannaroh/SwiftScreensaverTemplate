@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E1C945551C95A587004AD93A /* SwiftScreensaverTemplateView.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C945541C95A587004AD93A /* SwiftScreensaverTemplateView.h */; };
-		E1C945571C95A587004AD93A /* SwiftScreensaverTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C945561C95A587004AD93A /* SwiftScreensaverTemplateView.m */; };
+		E1C9455F1C95A66B004AD93A /* SwiftScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9455E1C95A66B004AD93A /* SwiftScreensaverView.swift */; };
+		E1C945671C95A78F004AD93A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C945661C95A78F004AD93A /* AppDelegate.swift */; };
+		E1C945691C95A78F004AD93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C945681C95A78F004AD93A /* Assets.xcassets */; };
+		E1C9456C1C95A78F004AD93A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C9456A1C95A78F004AD93A /* MainMenu.xib */; };
+		E1C945711C95A7F2004AD93A /* SwiftScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9455E1C95A66B004AD93A /* SwiftScreensaverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E1C945511C95A587004AD93A /* SwiftScreensaverTemplate.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScreensaverTemplate.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1C945541C95A587004AD93A /* SwiftScreensaverTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftScreensaverTemplateView.h; sourceTree = "<group>"; };
-		E1C945561C95A587004AD93A /* SwiftScreensaverTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftScreensaverTemplateView.m; sourceTree = "<group>"; };
 		E1C945581C95A587004AD93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C9455E1C95A66B004AD93A /* SwiftScreensaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScreensaverView.swift; sourceTree = "<group>"; };
+		E1C945641C95A78F004AD93A /* ScreenSaverLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenSaverLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C945661C95A78F004AD93A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1C945681C95A78F004AD93A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1C9456B1C95A78F004AD93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E1C9456D1C95A78F004AD93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E1C9454D1C95A587004AD93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C945611C95A78F004AD93A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C945531C95A587004AD93A /* SwiftScreensaverTemplate */,
+				E1C945651C95A78F004AD93A /* ScreenSaverLauncher */,
 				E1C945521C95A587004AD93A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C945511C95A587004AD93A /* SwiftScreensaverTemplate.saver */,
+				E1C945641C95A78F004AD93A /* ScreenSaverLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,11 +64,21 @@
 		E1C945531C95A587004AD93A /* SwiftScreensaverTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				E1C945541C95A587004AD93A /* SwiftScreensaverTemplateView.h */,
-				E1C945561C95A587004AD93A /* SwiftScreensaverTemplateView.m */,
+				E1C9455E1C95A66B004AD93A /* SwiftScreensaverView.swift */,
 				E1C945581C95A587004AD93A /* Info.plist */,
 			);
 			path = SwiftScreensaverTemplate;
+			sourceTree = "<group>";
+		};
+		E1C945651C95A78F004AD93A /* ScreenSaverLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				E1C945661C95A78F004AD93A /* AppDelegate.swift */,
+				E1C945681C95A78F004AD93A /* Assets.xcassets */,
+				E1C9456A1C95A78F004AD93A /* MainMenu.xib */,
+				E1C9456D1C95A78F004AD93A /* Info.plist */,
+			);
+			path = ScreenSaverLauncher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,7 +88,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C945551C95A587004AD93A /* SwiftScreensaverTemplateView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,16 +112,37 @@
 			productReference = E1C945511C95A587004AD93A /* SwiftScreensaverTemplate.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		E1C945631C95A78F004AD93A /* ScreenSaverLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C9456E1C95A78F004AD93A /* Build configuration list for PBXNativeTarget "ScreenSaverLauncher" */;
+			buildPhases = (
+				E1C945601C95A78F004AD93A /* Sources */,
+				E1C945611C95A78F004AD93A /* Frameworks */,
+				E1C945621C95A78F004AD93A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenSaverLauncher;
+			productName = ScreenSaverLauncher;
+			productReference = E1C945641C95A78F004AD93A /* ScreenSaverLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E1C945481C95A587004AD93A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Robert Pankrath";
 				TargetAttributes = {
 					E1C945501C95A587004AD93A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					E1C945631C95A78F004AD93A = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -107,6 +153,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E1C945471C95A587004AD93A;
 			productRefGroup = E1C945521C95A587004AD93A /* Products */;
@@ -114,6 +161,7 @@
 			projectRoot = "";
 			targets = (
 				E1C945501C95A587004AD93A /* SwiftScreensaverTemplate */,
+				E1C945631C95A78F004AD93A /* ScreenSaverLauncher */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +174,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1C945621C95A78F004AD93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C945691C95A78F004AD93A /* Assets.xcassets in Resources */,
+				E1C9456C1C95A78F004AD93A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -133,11 +190,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C945571C95A587004AD93A /* SwiftScreensaverTemplateView.m in Sources */,
+				E1C9455F1C95A66B004AD93A /* SwiftScreensaverView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C945601C95A78F004AD93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C945711C95A7F2004AD93A /* SwiftScreensaverView.swift in Sources */,
+				E1C945671C95A78F004AD93A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1C9456A1C95A78F004AD93A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1C9456B1C95A78F004AD93A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E1C945591C95A587004AD93A /* Debug */ = {
@@ -222,11 +299,15 @@
 		E1C9455C1C95A587004AD93A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SwiftScreensaverTemplate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pankrathr.SwiftScreensaverTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -234,12 +315,40 @@
 		E1C9455D1C95A587004AD93A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SwiftScreensaverTemplate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pankrathr.SwiftScreensaverTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		E1C9456F1C95A78F004AD93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScreenSaverLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pankrathr.ScreenSaverLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1C945701C95A78F004AD93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScreenSaverLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pankrathr.ScreenSaverLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -260,6 +369,14 @@
 			buildConfigurations = (
 				E1C9455C1C95A587004AD93A /* Debug */,
 				E1C9455D1C95A587004AD93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1C9456E1C95A78F004AD93A /* Build configuration list for PBXNativeTarget "ScreenSaverLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C9456F1C95A78F004AD93A /* Debug */,
+				E1C945701C95A78F004AD93A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
